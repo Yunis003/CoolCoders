@@ -1,0 +1,139 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  /* Chrome 10-25, Safari 5.1-6 */
+    background-image: url(./Cosmic\ Fusion.jpg);
+    
+}
+body::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    inset: 0;
+    opacity: 0.2;
+    z-index: -1;
+}
+#container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 800px;
+    height: 450px;
+    background-color: rgb(246, 246, 246);
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 0 20px black;
+  
+    
+}
+.left-side{
+    width: 42%;
+    height: fit-content;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgb(200, 200, 200);
+}
+.top p{
+    color:rgb(140, 140, 140) ;
+    >a{
+        color: blueviolet;
+    }
+}
+
+
+
+
+
+
+.left-side .center{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  >div .email-input, .pass-input{
+    width: 100%;
+    border: 1px solid rgb(192, 192, 192);
+    padding: 10px;
+    color:rgb(140, 140, 140) ;
+    border-radius: 7px;
+  }
+ 
+
+}
+.checkbox span{
+    color: rgb(140, 140, 140);
+ }
+
+ .semi{
+    width: 100%;
+    background-color: blueviolet;
+    color: #FFF;
+    padding: 10px 40px;
+    text-align:center;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+ }
+ .semi:hover{
+    background-color: rgb(105, 33, 171);
+ }
+ .bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    >div:nth-child(1), div:nth-child(2){
+        padding: 10px 20px;
+        border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 6px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: all .2s ease-in;
+    }
+    >div:nth-child(2){
+        border: 1px solid blue;
+    }
+    >div:nth-child(1):hover{
+        background-color: rgb(255, 171, 171);
+        border: none;
+    }
+    >div:nth-child(2):hover{
+        background-color: rgb(188, 188, 255);
+        border: none;
+    }
+ }
+.right-side{
+    width: 58%;
+    >img{
+        width: 470px;
+    }
+}
+.checkbox{
+    display: none;
+}
+
